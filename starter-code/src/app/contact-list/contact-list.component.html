@@ -4,26 +4,30 @@
 <p>{{oneContact.name}}</p>
 <p>{{oneContact.email}}</p>
 <p>{{oneContact.phoneNumber}}</p>
-<img [src] = "oneContact.image" src = "">
+<img [src] = "oneContact.image" id = "images" alt = "sorry">
 <hr>
 </div>
 
 
 <div>
   <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+  <input #name type="text" [(ngModel)]="newContact.name">
 </div>
+<br>
 <div>
   <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
+  <input #email type="text" [(ngModel)]="newContact.email">
 </div>
+<br>
 <div>
   <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
+  <input #phone type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
+<br>
 <div>
   <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+  <input #image type="text" [(ngModel)]="newContact.image">
 </div>
+<br>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact()">Submit New Contact</button>

@@ -4,7 +4,7 @@ describe('contact-app App', function() {
   let page: ContactAppPage;
 
   beforeEach(() => {
-    page = new ContactAppPage();
+    page = AppPage();
   });
 
   it('should display message saying app works', () => {
